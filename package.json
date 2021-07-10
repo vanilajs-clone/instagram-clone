@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/vanilajs-clone/instagram-clone#readme",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
     "autoprefixer": "^10.3.0",
+    "babel-loader": "^8.2.2",
     "css-loader": "^5.2.6",
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.2.1",

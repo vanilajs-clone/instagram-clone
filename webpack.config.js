@@ -9,10 +9,14 @@ module.exports = {
     clean: true, // 재빌드 시, 필요없는 파일들 제거
   },
   module: {
-    rulse: [
+    rules: [
       {
         test: /\.s?css$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+      {
+        test: /\.js$/,
+        use: ['babel-loader'],
       },
     ],
   },
