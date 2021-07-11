@@ -20,5 +20,14 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    extensions: ['.wasm', '.mjs', '.js', '.jsx', '.ts', '.tsx', '.json'],
+    alias: {
+      '~': path.resolve(__dirname, 'src'),
+    },
+  },
   plugins: [new HtmlPlugin({ template: './src/html/index.html' })],
+  devServer: {
+    host: 'localhost',
+  },
 };
