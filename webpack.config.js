@@ -26,7 +26,12 @@ module.exports = {
       '~': path.resolve(__dirname, 'src'),
     },
   },
-  plugins: [new HtmlPlugin({ template: './src/html/index.html' })],
+  plugins: [
+    new HtmlPlugin({
+      template: './src/html/index.html',
+      favicon: './favicon.ico',
+    }),
+  ],
   devServer: {
     host: 'localhost',
   },
