@@ -7,3 +7,5 @@
 ### [Babel 적용](https://msko.tistory.com/101)
 
 ### [Bootstrap 적용](https://msko.tistory.com/102)
+
+### [favicon 적용](https://msko.tistory.com/103)
