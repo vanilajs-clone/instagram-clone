@@ -1,12 +1,12 @@
 const path = require('path');
-const HtmlPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'images/[hash][ext][query]',
+    assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true, // 재빌드 시, 필요없는 파일들 제거
   },
   module: {
@@ -20,20 +20,13 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
         test: /\.(png|jpe?g|gif|webp)$/,
         type: 'asset/resource',
       },
-      // {
-      //   test: /\.html$/i,
-      //   loader: 'html-loader',
-      // },
-      // {
-      //   test: /\.html/,
-      //   type: 'asset/resource',
-      //   generator: {
-      //     filename: 'static/[hash][ext][query]',
-      //   },
-      // },
     ],
   },
   resolve: {
@@ -44,7 +37,7 @@ module.exports = {
     },
   },
   plugins: [
-    new HtmlPlugin({
+    new HtmlWebpackPlugin({
       template: './src/html/index.html',
       favicon: './src/assets/favicon.ico',
     }),
