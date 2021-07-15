@@ -1,2 +1,2 @@
 import '../scss/common.scss';
-import './header';
+import './layout/header';
