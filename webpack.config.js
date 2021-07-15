@@ -31,10 +31,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.wasm', '.mjs', '.js', '.jsx', '.ts', '.tsx', '.json'],
-    alias: {
-      '~': path.resolve(__dirname, 'src'),
-      assets: path.resolve(__dirname, 'src/assets'),
-    },
   },
   plugins: [
     new HtmlWebpackPlugin({
