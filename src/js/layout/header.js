@@ -1,5 +1,6 @@
 import '../../scss/header.scss';
 import logo from '../../assets/logo.png';
+import { search } from '../modules/icons';
 
 const header = `
   <div class="logo">
@@ -7,12 +8,17 @@ const header = `
       <img alt="logo" />
     </a>
   </div>
-  <div class="search">Search</div>
+  <div class="search">    
+    <input type="text" placeholder="검색" />
+  </div>
   <div class="icons">Icon</div>
 `;
 
-const headerEl = document.querySelector('#header .container');
-headerEl.innerHTML = header;
+const headerContainer = document.querySelector('#header .container');
+headerContainer.innerHTML = header;
 
-const logoEl = document.querySelector('img');
+const logoEl = headerContainer.querySelector('.logo img');
 logoEl.src = logo;
+
+const searchEl = headerContainer.querySelector('.search');
+searchEl.innerHTML += search;

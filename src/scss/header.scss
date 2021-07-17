@@ -1,7 +1,9 @@
+$borderColor: #dbdbdb;
+
 #header {
   height: 54px;
   background-color: #fff;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid $borderColor;
 
   .headerWrap {
     position: fixed;
@@ -34,6 +36,42 @@
 
           &:visited {
             color: #00376b;
+          }
+        }
+      }
+
+      .search {
+        height: 28px;
+        width: 215px;
+        min-width: 125px;
+        position: relative;
+
+        .fa-search {
+          position: absolute;
+          left: 40%;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+          color: #a5a7aa;
+          font-size: 12px;
+        }
+
+        input {
+          width: 100%;
+          height: 100%;
+          appearance: none;
+          background-color: #fafafa;
+          border: 1px solid $borderColor;
+          border-radius: 3px;
+          color: #262626;
+          font-size: 14px;
+          text-align: center;
+          outline: 0;
+          padding: 3px 10px 3px 26px;
+          z-index: 2;
+
+          &::placeholder {
+            color: #a5a7aa;
           }
         }
       }
