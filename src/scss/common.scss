@@ -1,4 +1,9 @@
 // Default variable overrides
+$container-max-widths: (
+  lg: 975px,
+  xl: 975px,
+  xxl: 975px,
+);
 
 // Required
 @import '../../node_modules/bootstrap/scss/functions';

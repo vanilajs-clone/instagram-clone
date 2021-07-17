@@ -1,4 +1,8 @@
 #header {
+  height: 54px;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+
   .headerWrap {
     position: fixed;
     top: 0;
@@ -23,6 +27,14 @@
           max-height: 100%;
           max-width: 100%;
           object-fit: contain;
+        }
+
+        a {
+          text-decoration: none;
+
+          &:visited {
+            color: #00376b;
+          }
         }
       }
     }

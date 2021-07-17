@@ -3,7 +3,9 @@ import logo from '../../assets/logo.png';
 
 const header = `
   <div class="logo">
-    <img alt="logo" />
+    <a href="/" tabIndex="0">
+      <img alt="logo" />
+    </a>
   </div>
   <div class="search">Search</div>
   <div class="icons">Icon</div>
