@@ -75,6 +75,17 @@ $borderColor: #dbdbdb;
           }
         }
       }
+
+      .icons {
+        display: flex;
+        justify-content: space-around;
+
+        svg {
+          width: 22px;
+          height: 22px;
+          margin-left: 22px;
+        }
+      }
     }
   }
 }
