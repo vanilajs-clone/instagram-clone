@@ -30,14 +30,6 @@ $borderColor: #dbdbdb;
           max-width: 100%;
           object-fit: contain;
         }
-
-        a {
-          text-decoration: none;
-
-          &:visited {
-            color: #00376b;
-          }
-        }
       }
 
       .search {
@@ -86,6 +78,11 @@ $borderColor: #dbdbdb;
           height: 22px;
           margin-left: 22px;
         }
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
       }
     }
   }

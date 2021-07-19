@@ -23,9 +23,9 @@ const header = `
     <input type="text" placeholder="검색" />
   </div>
   <div class="icons">
-    ${home}
-    ${farPaperPlane}
-    ${farCompass}
+    <a href="/" tabIndex="0">${home}</a>
+    <a href="/" tabIndex="0">${farPaperPlane}</a>
+    <a href="/" tabIndex="0">${farCompass}</a>
     ${farHeart}
     <img src="${noProfile}" />
   </div>
