@@ -1,5 +1,6 @@
 import '../../scss/header.scss';
 import logo from '../../assets/logo.png';
+import noProfile from '../../assets/noProfile.jpg';
 import {
   search,
   home,
@@ -26,6 +27,7 @@ const header = `
     ${farPaperPlane}
     ${farCompass}
     ${farHeart}
+    <img src="${noProfile}" />
   </div>
 `;
 
